@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Hoang Sol",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -23,13 +23,8 @@
           {
             "group": "Best Practices",
             "pages": [
-              "agile-practices",
-              "codeframework"
-            ]
-          },
-          {
-            "group": "What-How-Why",
-            "pages": [
+              "introduction",
+              "codeframework",
               "basics/business-analysis",
               "basics/competencies",
               "basics/practices"
