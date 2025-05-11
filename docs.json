@@ -35,13 +35,13 @@
         ]
       },
       {
-        "tab": "General",
+        "tab": "Best Practices",
         "groups": [
           {
             "group": "Introduction",
             "pages": [
-              "basics/introduction",
-              "agilebasics"
+              "introduction",
+              "basics/business-analysis"
             ]
           },
           {
