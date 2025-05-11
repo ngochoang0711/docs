@@ -1,107 +1,158 @@
 ---
-title: 'Development'
-description: 'Preview changes locally to update your docs'
+title: 'C.O.D.E. Framework'
+description: 'A comprehensive guide to the C.O.D.E. Framework for Agile Business Analysis.'
 ---
 
-<Info>
-  **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding. <br />
-  Please upgrade to ```docs.json``` before proceeding and delete the legacy ```mint.json``` file.
-</Info>
+# The C.O.D.E. Framework
 
-Follow these steps to install and run Mintlify on your operating system:
+The C.O.D.E. Framework provides a structured approach to Agile Business Analysis, breaking down the process into four key phases: Clarify, Organize, Define, and Execute.
 
-**Step 1**: Install Mintlify:
+## 1. Clarify
 
-<CodeGroup>
+The Clarify phase focuses on understanding business needs and aligning stakeholders.
 
-  ```bash npm
-  npm i -g mintlify
-  ```
+### Objectives
+- Gain thorough understanding of business needs and project goals
+- Align all stakeholders on vision and expectations
 
-```bash yarn
-yarn global add mintlify
-```
+### Activities
+1. **Stakeholder Identification**
+   - Identify key stakeholders
+   - Map stakeholder relationships
+   - Document stakeholder needs
 
-</CodeGroup>
+2. **Requirements Gathering**
+   - Conduct interviews and surveys
+   - Facilitate workshops
+   - Document findings
 
-**Step 2**: Navigate to the docs directory (where the `docs.json` file is located) and execute the following command:
+3. **Documentation**
+   - Create requirement specifications
+   - Develop user personas
+   - Map user journeys
 
-```bash
-mintlify dev
-```
+4. **Shared Understanding**
+   - Facilitate stakeholder discussions
+   - Create visual aids
+   - Validate requirements
 
-A local preview of your documentation will be available at `http://localhost:3000`.
+## 2. Organize
 
-### Custom Ports
+The Organize phase involves structuring and prioritizing requirements.
 
-By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. To run Mintlify on port 3333, for instance, use this command:
+### Objectives
+- Structure requirements effectively
+- Prepare clear backlog for development
 
-```bash
-mintlify dev --port 3333
-```
+### Activities
+1. **User Story Creation**
+   - Write clear user stories
+   - Define acceptance criteria
+   - Link related stories
 
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
+2. **Prioritization**
+   - Use MoSCoW method
+   - Apply RICE framework
+   - Consider business value
 
-```md
-Port 3000 is already in use. Trying 3001 instead.
-```
+3. **Backlog Preparation**
+   - Organize user stories
+   - Update regularly
+   - Maintain clarity
 
-## Mintlify Versions
+4. **Estimation**
+   - Use story points
+   - Consider team capacity
+   - Document assumptions
 
-Please note that each CLI release is associated with a specific version of Mintlify. If your local website doesn't align with the production version, please update the CLI:
+## 3. Define
 
-<CodeGroup>
+The Define phase focuses on detailing requirements and designing solutions.
 
-```bash npm
-npm i -g mintlify@latest
-```
+### Objectives
+- Detail requirements comprehensively
+- Design feasible solutions
 
-```bash yarn
-yarn global upgrade mintlify
-```
+### Activities
+1. **Requirement Detailing**
+   - Elaborate user stories
+   - Create wireframes
+   - Document workflows
 
-</CodeGroup>
+2. **Collaboration with Development**
+   - Discuss technical feasibility
+   - Gather developer input
+   - Address constraints
 
-## Validating Links
+3. **Solution Design**
+   - Create specifications
+   - Document architecture
+   - Define interfaces
 
-The CLI can assist with validating reference links made in your documentation. To identify any broken links, use the following command:
+4. **Review & Feedback**
+   - Present solutions
+   - Gather feedback
+   - Iterate designs
 
-```bash
-mintlify broken-links
-```
+## 4. Execute
 
-## Deployment
+The Execute phase involves implementing solutions and managing risks.
 
-<Tip>
-  Unlimited editors available under the [Pro
-  Plan](https://mintlify.com/pricing) and above.
-</Tip>
+### Objectives
+- Implement solutions effectively
+- Manage risks proactively
 
-If the deployment is successful, you should see the following:
+### Activities
+1. **Implementation Support**
+   - Clarify requirements
+   - Address issues
+   - Monitor progress
 
-<Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
-</Frame>
+2. **Risk Management**
+   - Identify risks
+   - Develop mitigation strategies
+   - Monitor risk status
 
-## Code Formatting
+3. **Progress Monitoring**
+   - Track sprint goals
+   - Update stakeholders
+   - Address blockers
 
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
+4. **Continuous Improvement**
+   - Gather feedback
+   - Document lessons learned
+   - Implement improvements
 
-## Troubleshooting
+## Best Practices
 
-<AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
+1. **Communication**
+   - Regular updates
+   - Clear documentation
+   - Transparent processes
 
-    This may be due to an outdated version of node. Try the following:
-    1. Remove the currently-installed version of mintlify: `npm remove -g mintlify`
-    2. Upgrade to Node v19 or higher.
-    3. Reinstall mintlify: `npm install -g mintlify`
-  </Accordion>
+2. **Collaboration**
+   - Cross-functional teams
+   - Shared understanding
+   - Regular feedback
 
-  <Accordion title="Issue: Encountering an unknown error">
-  
-    Solution: Go to the root of your device and delete the \~/.mintlify folder. Afterwards, run `mintlify dev` again.
-  </Accordion>
-</AccordionGroup>
+3. **Adaptability**
+   - Embrace change
+   - Iterative approach
+   - Continuous learning
 
-Curious about what changed in the CLI version? [Check out the CLI changelog.](https://www.npmjs.com/package/mintlify?activeTab=versions)
+## Tools and Templates
+
+1. **Documentation**
+   - User story templates
+   - Acceptance criteria checklists
+   - Risk assessment matrices
+
+2. **Collaboration**
+   - JIRA boards
+   - Confluence pages
+   - Miro boards
+
+3. **Tracking**
+   - Sprint burndown charts
+   - Velocity metrics
+   - Risk registers 
