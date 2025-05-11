@@ -24,22 +24,6 @@
           {
             "group": "Best Practices",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Best Practices",
-        "groups": [
-          {
-            "group": "Introduction",
-            "pages": [
               "introduction"
             ]
           },
@@ -49,6 +33,22 @@
               "basics/business-analysis",
               "basics/competencies",
               "basics/practices"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "AgileX",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": [
+              "agilex/markdown",
+              "agilex/code",
+              "agilex/images",
+              "agilex/settings",
+              "agilex/navigation",
+              "agilex/reusable-snippets"
             ]
           }
         ]
