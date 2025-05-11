@@ -40,16 +40,15 @@
           {
             "group": "Introduction",
             "pages": [
-              "introduction",
-              "basics/business-analysis"
+              "introduction"
             ]
           },
           {
             "group": "What-How-Why",
             "pages": [
               "basics/business-analysis",
-              "basics/requirements",
-              "basics/stakeholder"
+              "basics/competencies",
+              "basics/practices"
             ]
           }
         ]
