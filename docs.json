@@ -17,14 +17,14 @@
             "group": "Agile Business Analysis",
             "pages": [
               "basics/agile",
-              "codeframework",
               "usecases"
             ]
           },
           {
             "group": "Best Practices",
             "pages": [
-              "introduction"
+              "introduction",
+              "codeframework"
             ]
           },
           {
