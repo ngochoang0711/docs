@@ -35,8 +35,8 @@
           {
             "group": "Introduction",
             "pages": [
-              "basics/business-analysis",
-              "basics/competencies",
+              "agilex/introduction",
+              "agilex/emma",
               "basics/practices"
             ]
           }
