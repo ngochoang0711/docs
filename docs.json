@@ -23,27 +23,21 @@
           {
             "group": "Best Practices",
             "pages": [
-              "introduction",
-              "codeframework",
-              "basics/business-analysis",
-              "basics/competencies",
-              "basics/practices"
+              "practices/introduction",
+              "practices/codeframework"
             ]
           }
         ]
       },
       {
-        "tab": "AgileX",
+        "tab": "AgileX Team",
         "groups": [
           {
             "group": "Introduction",
             "pages": [
-              "agilex/markdown",
-              "agilex/code",
-              "agilex/images",
-              "agilex/settings",
-              "agilex/navigation",
-              "agilex/reusable-snippets"
+              "basics/business-analysis",
+              "basics/competencies",
+              "basics/practices"
             ]
           }
         ]
