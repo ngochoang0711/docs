@@ -24,6 +24,7 @@
             "group": "Best Practices",
             "pages": [
               "practices/prioritization",
+              "practices/risk-mgmt",
               "practices/agilescrum"
             ]
           }
