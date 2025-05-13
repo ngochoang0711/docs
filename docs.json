@@ -11,13 +11,13 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "General",
+        "tab": "Foundation",
         "groups": [
           {
-            "group": "Agile Business Analysis",
+            "group": "Introduction to Business Analysis",
             "pages": [
-              "basics/agile",
-              "usecases"
+              "basics/foundation-steps",
+              "basics/career-progression"
             ]
           },
           {
