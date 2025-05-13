@@ -25,6 +25,8 @@
             "pages": [
               "practices/prioritization",
               "practices/risk-mgmt",
+              "practices/agile-practices",
+              "practices/quality-assurance",
               "practices/agilescrum"
             ]
           }
