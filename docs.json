@@ -9,6 +9,19 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Blog",
+          "icon": "book-open-cover",
+          "color": {
+            "light": "#a39e15",
+            "dark": "#a39e15"
+          },
+          "href": "https://www.businessanalysis.help"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Foundation",
@@ -48,21 +61,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Newsletters",
-          "href": "https://businessanalysis.help",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://hoangsol.com",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
