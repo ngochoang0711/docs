@@ -24,7 +24,7 @@
     },
     "tabs": [
       {
-        "tab": "AI News",
+        "tab": "AI Tool Exploration",
         "groups": [
           {
             "group": "Claude Agent Team",
@@ -34,16 +34,20 @@
             ]
           },
           {
-            "group": "Case Study: Agentic System for BIXSO Academy",
-            "pages": [
-              "practices/prioritization",
-              "practices/9-Agent-Business-Analysis-System",
-              "practices/agile-practices",
-              "practices/quality-assurance",
-              "practices/agilescrum",
-              "practices/documentation"
-            ]
+            "group": "Events",
+            "pages": []
           }
+        ]
+      },
+      {
+        "tab": "BIXSO",
+        "pages": [
+          "practices/prioritization",
+          "practices/9-Agent-Business-Analysis-System",
+          "practices/agile-practices",
+          "practices/quality-assurance",
+          "practices/agilescrum",
+          "practices/documentation"
         ]
       }
     ]
