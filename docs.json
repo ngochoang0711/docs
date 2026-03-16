@@ -45,21 +45,6 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "Packages",
-        "groups": [
-          {
-            "group": "Introduction",
-            "pages": [
-              "agilex/introduction",
-              "agilex/emma",
-              "agilex/jack",
-              "agilex/david",
-              "agilex/sarah"
-            ]
-          }
-        ]
       }
     ]
   },

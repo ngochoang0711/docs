@@ -1,42 +1,407 @@
 ---
-title: "Practices: Agile Business Analysis"
-description: "In Agile / Scrum ceremonies, a Business Analyst plays a key facilitative and collaborative role, especially when bridging communication between stakeholders and the development team."
+title: "The BIXSO Agentic BA Operating System"
+description: "The BAOS is a multi-agent platform that mirrors the lifecycle of Business Analysis.
+
+Instead of a single AI assistant, the system acts like a virtual consulting team composed of specialized agents."
 ---
 
-## 🔁 Sprints
+### High-Level Architecture
 
-- **Primary Duty**: Ensure that requirements are ready for development.
-- **To-dos:**
-  - Clarify and validate user stories.
-  - Confirm acceptance criteria.
-  - Ensure backlog items align with business objectives.
+```text
+Business Problem / Client Brief
+        ↓
+BAOS Orchestrator
+        ↓
+Analysis Layer (Discovery)
+        ↓
+Design Layer (Solution Shaping)
+        ↓
+Delivery Layer (Execution)
+        ↓
+Structured Artifacts
+        ↓
+Human Decision & Governance
+```
 
-## 📣 Daily
+This allows BIXSO to **scale analysis work while maintaining expert oversight**.
 
-- **Primary Duty:** Observe and support task progress.
-- **To-dos:**
-  - Listen for blockers that may relate to unclear requirements and follow up after the meeting.
-  - Clarify the business context for in-progress tasks.
+# Layer 1 — Orchestration Layer
 
-## 🗂 **Sprint Planning**
+### Orchestrator Agent
 
-- **Primary Duty:** Collaborate with Product to define the scope / sprint goals.
-- **To-dos:**
-  - Help articulate user stories.
-  - Define detailed acceptance criteria.
-  - Clarify business priorities to guide what goes into the sprint.
+The orchestrator acts like a **Principal Business Analyst**.
 
-## 📊 **Sprint Reviews**
+Responsibilities:
 
-- **Primary Duty:** Validate delivered functionality with business goals.
-- **To-dos:**
-  - Facilitate or participate in the demonstration.
-  - Gather stakeholder feedback.
-  - Note additional requirements or change requests.
+• break down the problem into analysis tasks\
+• route tasks to the right agent\
+• track outputs and dependencies\
+• assemble final artifacts
 
-## 🧠 **Sprint Retrospectives**
+Example workflow triggered by a new client problem:
 
-- **Primary Duty:** Controbute to process improvement discussions.
-- **To-dos:**
-  - Offer insights on requirement clarity, communication flows, or backlog refinement efficiency.
-  - Suggest, contribute ideas on enhancing requirement documentation/validation.
+```text
+Client Brief
+↓
+Goal Analysis
+↓
+Stakeholder Discovery
+↓
+Customer Insight
+↓
+Feature Discovery
+↓
+Prioritisation
+↓
+Solution Design
+↓
+MVP Definition
+```
+
+# Layer 2 — Discovery Layer (Understanding the Problem)
+
+These agents focus on **understanding the business environment**.
+
+## 1. Strategy Intelligence Agent
+
+Purpose
+
+Identify strategic context and business objectives.
+
+Techniques
+
+• SWOT\
+• Balanced Scorecard\
+• Business Model Analysis
+
+Output
+
+```text
+Strategic Objectives
+Key Risks
+Transformation Opportunities
+```
+
+## 2. Market Intelligence Agent
+
+Purpose
+
+Scan industry and competitor landscape.
+
+Data sources
+
+• market reports\
+• startup ecosystems\
+• product benchmarks
+
+Output
+
+```text
+Competitive Benchmark
+Market Trends
+Opportunity Map
+```
+
+## 3. Stakeholder Analysis Agent
+
+Purpose
+
+Map stakeholders and influence.
+
+Techniques
+
+• stakeholder matrix\
+• organizational modeling\
+• persona creation
+
+Output
+
+```text
+Stakeholder Map
+Influence Analysis
+Communication Strategy
+```
+
+## 4. Customer Insight Agent
+
+Purpose
+
+Understand user needs and behaviour.
+
+Techniques
+
+• interview synthesis\
+• journey mapping\
+• jobs-to-be-done analysis
+
+Output
+
+```text
+Customer Personas
+Pain Points
+Experience Gaps
+```
+
+# Layer 3 — Solution Design Layer
+
+These agents convert **insights into solution concepts**.
+
+## 5. Product Discovery Agent
+
+Purpose
+
+Generate potential solutions.
+
+Techniques
+
+• Impact Mapping\
+• Design Studio\
+• Story Mapping
+
+Output
+
+```text
+Feature Concepts
+Solution Hypotheses
+Early Prototypes
+```
+
+## 6. Value Prioritisation Agent
+
+Purpose
+
+Identify the highest value opportunities.
+
+Techniques
+
+• Kano Analysis\
+• Value vs Effort\
+• WSJF prioritisation
+
+Output
+
+```text
+Feature Priority Matrix
+Value Scoring
+Opportunity Ranking
+```
+
+## 7. Decision Modeling Agent
+
+Purpose
+
+Define business logic and decision structures.
+
+Technique
+
+Decision Model & Notation maintained by the Object Management Group.
+
+Output
+
+```text
+Decision Tables
+Business Rules
+Automation Logic
+```
+
+# Layer 4 — Delivery Layer
+
+These agents prepare the solution for **implementation**.
+
+## 8. Solution Design Agent
+
+Purpose
+
+Convert solution concepts into structured requirements.
+
+Techniques
+
+• user stories\
+• process modeling\
+• data modeling
+
+Output
+
+```text
+User Stories
+Acceptance Criteria
+Process Diagrams
+```
+
+## 9. Risk & Compliance Agent
+
+Purpose
+
+Ensure regulatory and operational compliance.
+
+Focus
+
+• security standards\
+• data governance\
+• regulatory frameworks
+
+Output
+
+```text
+Risk Register
+Compliance Checklist
+Mitigation Plan
+```
+
+## 10. MVP & Delivery Planning Agent
+
+Purpose
+
+Define MVP scope and roadmap.
+
+Techniques
+
+• MVP definition\
+• backlog creation\
+• release planning
+
+Output
+
+```text
+MVP Definition
+Product Roadmap
+Sprint Backlog
+```
+
+# Layer 5 — Knowledge & Learning Layer
+
+This layer turns BIXSO into a **learning organization**.
+
+## 11. Knowledge Capture Agent
+
+Purpose
+
+Store insights and patterns from every project.
+
+Output
+
+```text
+Reusable Frameworks
+Industry Knowledge Base
+Best Practices
+```
+
+## 12. Training & Curriculum Agent
+
+Purpose
+
+Convert consulting insights into training material for BIXSO Academy.
+
+Output
+
+```text
+Case Studies
+Training Modules
+Learning Exercises
+```
+
+## 13. Assessment Agent
+
+Purpose
+
+Evaluate student or practitioner work.
+
+Output
+
+```text
+Exercise Scoring
+Feedback Reports
+Skill Gap Analysis
+```
+
+# Structured Artifacts Produced by BAOS
+
+The system automatically generates **BA deliverables**.
+
+Examples:
+
+| Artifact          | Source Agent               |
+| :---------------- | :------------------------- |
+| Impact Map        | Product Discovery Agent    |
+| Stakeholder Map   | Stakeholder Agent          |
+| Customer Personas | Customer Insight Agent     |
+| Kano Matrix       | Value Prioritisation Agent |
+| Decision Tables   | Decision Modeling Agent    |
+| User Stories      | Solution Design Agent      |
+| Risk Register     | Risk & Compliance Agent    |
+| MVP Definition    | Delivery Planning Agent    |
+
+# Human-in-the-Loop Governance
+
+Even though agents perform analysis, **humans remain responsible for decisions**.
+
+Key roles
+
+| Role                  | Responsibility              |
+| :-------------------- | :-------------------------- |
+| Principal BA          | Validate analysis           |
+| Product Owner         | Approve backlog             |
+| Executive sponsor     | Approve strategy            |
+| Subject Matter Expert | Validate domain assumptions |
+| Instructor (Academy)  | Review learning outputs     |
+
+Human review cycle
+
+```text
+AI Analysis
+      ↓
+Expert Review
+      ↓
+Decision
+      ↓
+AI Iteration
+```
+
+# Benefits of the BIXSO BA Operating System
+
+### 1. Faster analysis cycles
+
+Weeks of research can be reduced to **hours or days**.
+
+### 2. Consistent methodology
+
+Every project follows a **structured BA framework**.
+
+### 3. Reusable knowledge
+
+Insights from consulting engagements feed directly into **BIXSO Academy training**.
+
+### 4. Scalable consulting capability
+
+A small team can handle **multiple complex projects simultaneously**.
+
+# Final System Architecture
+
+```text
+Client Problem
+      ↓
+BAOS Orchestrator
+      ↓
+Discovery Agents
+  Strategy
+  Market
+  Stakeholder
+  Customer
+      ↓
+Design Agents
+  Product Discovery
+  Prioritisation
+  Decision Modeling
+      ↓
+Delivery Agents
+  Solution Design
+  Risk & Compliance
+  MVP Planning
+      ↓
+Knowledge Agents
+  Knowledge Capture
+  Training
+  Assessment
+      ↓
+Human Decision Makers
+```
