@@ -24,20 +24,20 @@
     },
     "tabs": [
       {
-        "tab": "Foundation",
+        "tab": "AI News",
         "groups": [
           {
-            "group": "Introduction to Business Analysis",
+            "group": "Claude Agent Team",
             "pages": [
               "basics/foundation-steps",
               "basics/career-progression"
             ]
           },
           {
-            "group": "Best Practices",
+            "group": "Case Study: Agentic System for BIXSO Academy",
             "pages": [
               "practices/prioritization",
-              "practices/risk-mgmt",
+              "practices/9-Agent-Business-Analysis-System",
               "practices/agile-practices",
               "practices/quality-assurance",
               "practices/agilescrum",
@@ -47,7 +47,7 @@
         ]
       },
       {
-        "tab": "AgileX Team",
+        "tab": "Packages",
         "groups": [
           {
             "group": "Introduction",

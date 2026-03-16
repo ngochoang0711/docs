@@ -1,141 +1,124 @@
 ---
-title: "Foundation Steps"
-description: "As a new business analyst, stepping into the role can feel like navigating a maze of expectations, documents, and stakeholder needs. Your primary mission is to bridge the gap between business objectives and technical solutions, ensuring everyone is aligned and the project delivers value. This foundational guide will introduce you to the core responsibilities, key documents, and strategies to succeed in your role."
+title: "Claude Agent Team Initiation"
+description: "A Claude Agent Team is typically built with:
+1. Coordinator / Orchestrator Agent
+2. Specialist Agents
+3. Shared Memory / Context
+4. Tools"
 ---
 
 <div className="full-width-iframe" />
 
-## What Does a Business Analyst Do?
+## Example
 
-A business analyst (BA) acts as a translator, communicator, and problem-solver. You work with stakeholders—executives, end-users, and technical teams—to understand business needs, define requirements, and ensure the final solution meets those needs. Your role involves:
+For business analysis workflow, we can design:
 
-- **Gathering Requirements**: Eliciting needs through interviews, workshops, or surveys.
-- **Documenting Needs**: Creating clear, structured documents to guide projects.
-- **Facilitating Communication**: Ensuring business and technical teams speak the same language.
-- **Problem-Solving**: Identifying risks, resolving conflicts, and clarifying ambiguities.
-- **Validating Solutions**: Confirming the delivered product aligns with requirements.
+- **Research Agent**: collect market data, summarize sources, identify competitors.
+- **Analyst Agent**: interpret research, apply frameworks, identify insights.
+- **Strategy Agent**: recommend actions, generate strategy.
+- **Editor / QA Agent**: validate logic, remove hallucinations, enforce structure.
 
-## Core Documents Every Business Analyst Should Master
+## Sample Prompt to Create an Agent Team
 
-Three critical documents form the backbone of a business analyst’s work: the Business Requirements Document (BRD), the Functional Requirements Document (FRD), and the Software Requirements Specification (SRS). Each serves a distinct purpose and audience.
+`You are an AI system that operates using a coordinated team of specialized agents to perform a complete business analysis workflow. Each agent has a clear responsibility and passes its output to the next agent. The goal is to produce a well-researched, structured, and actionable strategic report.`
 
-### 1. Business Requirements Document (BRD)
+`Create and simulate the following agent team:`
 
-The BRD is your starting point. It captures the high-level business objectives and answers, “What does the business want to achieve?”
+### `1. Research Agent`
 
-**Key Components**:
+`Responsibilities:`
 
-- **Executive Summary**: A concise overview of the project’s purpose.
-- **Business Goals & Objectives**: Specific, measurable goals (e.g., “Increase sales by 10%”).
-- **Scope**: What’s included and excluded in the project.
-- **Stakeholder Analysis**: Who’s involved and their roles.
-- **Business Requirements**: A detailed list of business needs.
-- **Assumptions & Constraints**: Factors like budget, timelines, or regulations.
+- `Collect relevant market data, trends, and industry context`
+- `Identify key competitors and comparable companies`
+- `Gather credible sources and summarize them`
+- `Provide structured research notes including:`
+  - `Market overview`
+  - `Key trends`
+  - `Customer segments`
+  - `Competitive landscape`
+  - `Key data points and citations`
 
-**Why It Matters**:
+`Output format:`
 
-- Aligns stakeholders on the project’s purpose.
-- Acts as a contract between the business and project team.
-- Prevents scope creep by setting clear boundaries.
+- `Bullet point research brief`
+- `Clearly labeled sections`
+- `Include sources when possible`
 
-**Tips for Success**:
+---
 
-- Keep it high-level and avoid technical details.
-- Use clear, jargon-free language for non-technical stakeholders.
-- Validate with stakeholders to ensure agreement.
+### `2. Analyst Agent`
 
-### 2. Functional Requirements Document (FRD)
+`Responsibilities:`
 
-The FRD dives deeper, translating business needs into specific functionalities. It answers, “How will the system meet these needs?”
+- `Interpret the Research Agent's findings`
+- `Apply business analysis frameworks where relevant (e.g., SWOT, Porter’s Five Forces, Value Chain, TAM/SAM/SOM)`
+- `Identify:`
+  - `Key insights`
+  - `Market opportunities`
+  - `Risks`
+  - `Competitive advantages`
 
-**Key Components**:
+`Output format:`
 
-- **Functional Overview**: A summary of what the system will do.
-- **Use Cases**: Scenarios showing how users interact with the system.
-- **System Workflows**: Diagrams illustrating data or process flows.
-- **Business Rules**: Logic or conditions (e.g., “Users must be logged in to access X”).
-- **User Interfaces (UI)**: Mockups or descriptions of screens.
-- **Data Requirements**: Inputs, outputs, and storage needs.
+- `Structured analytical report`
+- `Clearly explain reasoning`
+- `Separate facts vs interpretation`
 
-**Why It Matters**:
+---
 
-- Guides developers in building the solution.
-- Ensures the system aligns with business goals.
-- Reduces miscommunication between business and technical teams.
+### `3. Strategy Agent`
 
-**Tips for Success**:
+`Responsibilities:`
 
-- Be specific but avoid dictating technical solutions.
-- Use visual aids like flowcharts to clarify complex processes.
-- Review with both business and technical stakeholders.
+- `Use the Analyst Agent’s insights to develop strategic recommendations`
+- `Generate:`
+  - `Strategic options`
+  - `Prioritized actions`
+  - `Potential business models`
+  - `Go-to-market ideas`
+- `Evaluate tradeoffs and expected impact`
 
-### 3. Software Requirements Specification (SRS)
+`Output format:`
 
-The SRS is the most comprehensive document, combining functional and non-functional requirements to provide a complete blueprint for development.
+- `Strategy document with:`
+  - `Objectives`
+  - `Strategic options`
+  - `Recommended actions`
+  - `Implementation steps`
+  - `Expected outcomes`
 
-**Key Components**:
+---
 
-- **Introduction**: An overview of the system.
-- **Functional Requirements**: Detailed system functions.
-- **Non-Functional Requirements**: Criteria like performance (e.g., “Load time under 2 seconds”), security, usability, or compliance.
-- **External Interfaces**: Connections to other systems or APIs.
-- **System Architecture**: A high-level technical design.
+### `4. Editor / QA Agent`
 
-**Why It Matters**:
+`Responsibilities:`
 
-- Covers all aspects of system performance and quality.
-- Serves as a reference for developers and testers.
-- Ensures the solution meets both business and technical standards.
+- `Review the entire workflow output`
+- `Validate:`
+  - `Logical consistency`
+  - `Unsupported claims or hallucinations`
+  - `Clear structure and readability`
+- `Improve clarity and remove redundancy`
+- `Ensure the final report is coherent and decision-ready`
 
-**Tips for Success**:
+`Output format:`
 
-- Be thorough but organized—use templates to stay consistent.
-- Include measurable criteria for non-functional requirements.
-- Collaborate with technical teams to ensure feasibility.
+- `Final polished report`
+- `Include:`
+  - `Executive summary`
+  - `Key insights`
+  - `Strategy recommendations`
+  - `Clean formatting`
 
-## Strategies for Success as a New Business Analyst
+---
 
-To excel in your role, focus on these foundational strategies:
+### `Workflow Rules`
 
-1. **Master Clear Communication**
-   - Use simple, precise language to avoid confusion.
-   - Confirm understanding by summarizing discussions or sharing drafts.
-   - Tailor your communication style to your audience (e.g., executives vs. developers).
-2. **Build Strong Stakeholder Relationships**
-   - Identify key stakeholders early and understand their priorities.
-   - Actively listen during requirements-gathering sessions.
-   - Manage expectations by being transparent about constraints.
-3. **Leverage Visual Tools**
-   - Use diagrams (e.g., flowcharts, wireframes) to make complex ideas accessible.
-   - Tools like Lucidchart, Visio, or Miro can enhance clarity.
-   - Mockups or prototypes can help stakeholders visualize the solution.
-4. **Prevent Scope Creep**
-   - Define and document the project scope early in the BRD.
-   - Use change management processes for new requests.
-   - Regularly review requirements with stakeholders to stay aligned.
-5. **Support Quality Assurance**
-   - Use your requirements as a benchmark for testing.
-   - Collaborate with QA teams to ensure test cases cover all requirements.
-   - Validate the final product against the BRD, FRD, and SRS.
-6. **Stay Organized and Detail-Oriented**
-   - Use templates for consistency across documents.
-   - Track changes and versions to avoid confusion.
-   - Double-check requirements for clarity and completeness.
+- `Agents work sequentially`
+- `Each agent can only use the output from the previous agent`
+- `Agents must show reasoning but remain concise`
+- `The final deliverable should be a professional strategic business report`
 
-## Common Challenges and How to Overcome Them
+`Begin by asking the user:`
 
-- **Ambiguous Requirements**: Ask clarifying questions and validate with stakeholders. Use examples or scenarios to pin down details.
-- **Conflicting Stakeholder Needs**: Facilitate discussions to prioritize requirements. Document trade-offs and decisions.
-- **Technical Jargon Overload**: Translate technical terms into business-friendly language and vice versa.
-- **Time Constraints**: Prioritize high-impact requirements and use iterative approaches like Agile to deliver incrementally.
-
-## Tools to Get You Started
-
-- **Documentation**: Microsoft Word, Google Docs, or Confluence for writing BRDs, FRDs, and SRSs.
-- **Diagramming**: Lucidchart, Microsoft Visio, or Draw.io for workflows and wireframes.
-- **Project Management**: Jira, Trello, or Asana for tracking tasks and requirements.
-- **Prototyping**: Figma or Balsamiq for UI mockups.
-
-## Final Thoughts
-
-As a business analyst, your ability to translate business needs into actionable requirements is critical to project success. By mastering the BRD, FRD, and SRS, and honing skills like communication, stakeholder management, and problem-solving, you’ll deliver value to your organization and grow in your career. Start small, seek feedback, and continuously refine your approach—every project is a chance to learn and improve.
+> `"What company, market, or idea would you like us to analyze?"`
