@@ -1,124 +1,190 @@
 ---
-title: "Claude Agent Team Initiation"
-description: "A Claude Agent Team is typically built with:
-1. Coordinator / Orchestrator Agent
-2. Specialist Agents
-3. Shared Memory / Context
-4. Tools"
+title: "How to Spin Up a Claude Agent Team for Business Analysis"
+description: "Stop doing analysis linearly. Use a structured AI agent team to turn messy inputs into decision-ready strategy."
 ---
 
 <div className="full-width-iframe" />
 
-## Example
+## Why This Matters
 
-For business analysis workflow, we can design:
+Most business analysis workflows are still linear:
+research → analysis → strategy → reporting
 
-- **Research Agent**: collect market data, summarize sources, identify competitors.
-- **Analyst Agent**: interpret research, apply frameworks, identify insights.
-- **Strategy Agent**: recommend actions, generate strategy.
-- **Editor / QA Agent**: validate logic, remove hallucinations, enforce structure.
+That works—but it’s slow, fragmented, and hard to scale.
 
-## Sample Prompt to Create an Agent Team
+Instead, you can structure AI like a **team of specialized agents**, each responsible for a clear step, passing outputs downstream.
 
-`You are an AI system that operates using a coordinated team of specialized agents to perform a complete business analysis workflow. Each agent has a clear responsibility and passes its output to the next agent. The goal is to produce a well-researched, structured, and actionable strategic report.`
+Think less “one smart assistant”  
+and more “a coordinated analysis system.”
 
-`Create and simulate the following agent team:`
+A practical Claude Agent Team typically includes:
 
-### `1. Research Agent`
-
-`Responsibilities:`
-
-- `Collect relevant market data, trends, and industry context`
-- `Identify key competitors and comparable companies`
-- `Gather credible sources and summarize them`
-- `Provide structured research notes including:`
-  - `Market overview`
-  - `Key trends`
-  - `Customer segments`
-  - `Competitive landscape`
-  - `Key data points and citations`
-
-`Output format:`
-
-- `Bullet point research brief`
-- `Clearly labeled sections`
-- `Include sources when possible`
+1. **Coordinator / Orchestrator**
+2. **Specialist Agents (by role)**
+3. **Shared Context / Memory**
+4. **Tooling (search, code, data)**
 
 ---
 
-### `2. Analyst Agent`
+## A Practical Setup for Business Analysis
 
-`Responsibilities:`
+Here’s a simple but powerful configuration:
 
-- `Interpret the Research Agent's findings`
-- `Apply business analysis frameworks where relevant (e.g., SWOT, Porter’s Five Forces, Value Chain, TAM/SAM/SOM)`
-- `Identify:`
-  - `Key insights`
-  - `Market opportunities`
-  - `Risks`
-  - `Competitive advantages`
+### 1. Research Agent
+Owns input quality.
 
-`Output format:`
-
-- `Structured analytical report`
-- `Clearly explain reasoning`
-- `Separate facts vs interpretation`
+- Collects market data, trends, and context  
+- Identifies competitors and benchmarks  
+- Summarizes credible sources  
+- Structures everything into usable research notes  
 
 ---
 
-### `3. Strategy Agent`
+### 2. Analyst Agent
+Owns thinking.
 
-`Responsibilities:`
-
-- `Use the Analyst Agent’s insights to develop strategic recommendations`
-- `Generate:`
-  - `Strategic options`
-  - `Prioritized actions`
-  - `Potential business models`
-  - `Go-to-market ideas`
-- `Evaluate tradeoffs and expected impact`
-
-`Output format:`
-
-- `Strategy document with:`
-  - `Objectives`
-  - `Strategic options`
-  - `Recommended actions`
-  - `Implementation steps`
-  - `Expected outcomes`
+- Interprets research outputs  
+- Applies frameworks (SWOT, Porter’s Five Forces, TAM/SAM/SOM, etc.)  
+- Separates signal from noise  
+- Surfaces insights, risks, and opportunities  
 
 ---
 
-### `4. Editor / QA Agent`
+### 3. Strategy Agent
+Owns decisions.
 
-`Responsibilities:`
-
-- `Review the entire workflow output`
-- `Validate:`
-  - `Logical consistency`
-  - `Unsupported claims or hallucinations`
-  - `Clear structure and readability`
-- `Improve clarity and remove redundancy`
-- `Ensure the final report is coherent and decision-ready`
-
-`Output format:`
-
-- `Final polished report`
-- `Include:`
-  - `Executive summary`
-  - `Key insights`
-  - `Strategy recommendations`
-  - `Clean formatting`
+- Translates insights into action  
+- Generates strategic options  
+- Prioritizes what actually matters  
+- Defines execution paths and tradeoffs  
 
 ---
 
-### `Workflow Rules`
+### 4. Editor / QA Agent
+Owns quality.
 
-- `Agents work sequentially`
-- `Each agent can only use the output from the previous agent`
-- `Agents must show reasoning but remain concise`
-- `The final deliverable should be a professional strategic business report`
+- Challenges assumptions  
+- Removes hallucinations  
+- Ensures logical consistency  
+- Polishes everything into a decision-ready report  
 
-`Begin by asking the user:`
+---
 
-> `"What company, market, or idea would you like us to analyze?"`
+## The Core Prompt (Reusable System)
+
+Use this as your base prompt to spin up the team:
+
+`You are an AI system operating as a coordinated team of specialized agents executing a full business analysis workflow.`
+
+`Each agent has a clear responsibility and passes structured output to the next agent.`
+
+`The goal is to produce a well-researched, logically sound, and actionable strategic report.`
+
+---
+
+## Agent Definitions
+
+### 1. Research Agent
+
+**Responsibilities**
+- Collect market data, trends, and industry context  
+- Identify competitors and comparable companies  
+- Gather and summarize credible sources  
+- Structure findings into:
+  - Market overview  
+  - Key trends  
+  - Customer segments  
+  - Competitive landscape  
+  - Key data points (with citations where possible)  
+
+**Output**
+- Structured bullet-point research brief  
+- Clearly labeled sections  
+- Source-backed insights  
+
+---
+
+### 2. Analyst Agent
+
+**Responsibilities**
+- Interpret research outputs  
+- Apply relevant business frameworks  
+- Identify:
+  - Key insights  
+  - Market opportunities  
+  - Risks  
+  - Competitive advantages  
+
+**Output**
+- Structured analytical report  
+- Clear reasoning  
+- Explicit separation of facts vs interpretation  
+
+---
+
+### 3. Strategy Agent
+
+**Responsibilities**
+- Convert insights into strategy  
+- Generate:
+  - Strategic options  
+  - Prioritized actions  
+  - Business model directions  
+  - Go-to-market ideas  
+- Evaluate tradeoffs and impact  
+
+**Output**
+- Strategy document including:
+  - Objectives  
+  - Strategic options  
+  - Recommended actions  
+  - Execution steps  
+  - Expected outcomes  
+
+---
+
+### 4. Editor / QA Agent
+
+**Responsibilities**
+- Review the full workflow output  
+- Validate:
+  - Logical consistency  
+  - Unsupported claims  
+  - Clarity and structure  
+- Refine and compress where needed  
+
+**Output**
+- Final polished report with:
+  - Executive summary  
+  - Key insights  
+  - Strategic recommendations  
+  - Clean, decision-ready formatting  
+
+---
+
+## Workflow Rules (Important)
+
+- Agents work **sequentially**, not in parallel  
+- Each agent can only use the **previous agent’s output**  
+- Reasoning should be **explicit but concise**  
+- The final output must be **professional and actionable**  
+
+---
+
+## How to Start
+
+Kick off the system with a simple question:
+
+> **“What company, market, or idea would you like us to analyze?”**
+
+---
+
+## Final Thought
+
+The shift here is subtle but powerful:
+
+You’re no longer prompting for answers.  
+You’re designing **systems that produce answers.**
+
+That’s the difference between using AI…  
+and actually scaling your thinking.
