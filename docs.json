@@ -24,30 +24,12 @@
     },
     "tabs": [
       {
-        "tab": "AI Tool Exploration",
-        "groups": [
-          {
-            "group": "Claude Agent Team",
-            "pages": [
-              "basics/foundation-steps",
-              "basics/career-progression"
-            ]
-          },
-          {
-            "group": "Events",
-            "pages": []
-          }
-        ]
-      },
-      {
-        "tab": "BIXSO",
+        "tab": "BA Systems",
         "pages": [
           "practices/prioritization",
           "practices/9-Agent-Business-Analysis-System",
           "practices/agile-practices",
-          "practices/quality-assurance",
-          "practices/agilescrum",
-          "practices/documentation"
+          "practices/quality-assurance"
         ]
       }
     ]
